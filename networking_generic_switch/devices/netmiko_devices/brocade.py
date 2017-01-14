@@ -27,10 +27,10 @@ class BrocadeFastIron(netmiko_devices.NetmikoSwitch):
 
         PLUG_PORT_TO_NETWORK = (
 			'vlan {segmentation_id} by port',
-            'untagged ethe {port}',
+            'untagged ether {port}',
         )
 
         DELETE_PORT = (
 			'vlan {segmentation_id} by port',
-            'no untagged ethe {port}',
+            'no untagged ether {port}',
         )
